@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nis:</strong>
+  <%= @student.nis %>
+</p>
+
+<p>
+  <strong>Nama:</strong>
+  <%= @student.nama %>
+</p>
+
+<p>
+  <strong>Jenis kelamin:</strong>
+  <%= @student.jenis_kelamin %>
+</p>
+
+<p>
+  <strong>Tempat lahir:</strong>
+  <%= @student.tempat_lahir %>
+</p>
+
+<p>
+  <strong>Tanggal lahir:</strong>
+  <%= @student.tanggal_lahir %>
+</p>
+
+<p>
+  <strong>Alamat:</strong>
+  <%= @student.alamat %>
+</p>
+
+<p>
+  <strong>Asal sekolah:</strong>
+  <%= @student.asal_sekolah %>
+</p>
+
+<p>
+  <strong>Kelas:</strong>
+  <%= @student.kelas %>
+</p>
+
+<p>
+  <strong>Jurusan:</strong>
+  <%= @student.jurusan %>
+</p>
+
+<%= link_to 'Edit', edit_student_path(@student) %> |
+<%= link_to 'Back', students_path %>

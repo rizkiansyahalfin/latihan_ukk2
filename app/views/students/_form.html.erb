@@ -1,0 +1,65 @@
+<%= form_with(model: student) do |form| %>
+  <% if student.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+      <ul>
+        <% student.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nis %>
+    <%= form.text_field :nis %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nama %>
+    <%= form.text_field :nama %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jenis_kelamin, "Jenis Kelamin" %>
+    <%= form.radio_button :jenis_kelamin, 'Laki-laki' %>
+    <%= form.label :jenis_kelamin, "Laki-Laki", :value => "Laki-laki"  %>
+    <%= form.radio_button :jenis_kelamin, 'Perempuan' %>
+    <%= form.label :jenis_kelamin, "Perempuan", :value => "Perempuan" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tempat_lahir %>
+    <%= form.text_field :tempat_lahir %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tanggal_lahir %>
+    <%= form.date_select :tanggal_lahir %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alamat %>
+    <%= form.text_field :alamat %>
+  </div>
+
+  <div class="field">
+    <%= form.label :asal_sekolah %>
+    <%= form.text_field :asal_sekolah %>
+  </div>
+
+  <div class="field">
+    <%= form.label :kelas, 'Kelas' %>
+    <%= form.select :kelas, ['X', 'XI', 'XII'], :prompt => 'Pilih Kelas' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jurusan, 'Jurusan' %>
+    <%= form.select :jurusan, ['OTKP', 'RPL', 'TKJ', 'BDP', 'TBG', 'HTL'], :prompt => 'Pilih Jurusan' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nis: MyString
+  nama: MyString
+  jenis_kelamin: MyString
+  tempat_lahir: MyString
+  tanggal_lahir: 2021-04-15
+  alamat: MyString
+  asal_sekolah: MyString
+  kelas: MyString
+  jurusan: MyString
+
+two:
+  nis: MyString
+  nama: MyString
+  jenis_kelamin: MyString
+  tempat_lahir: MyString
+  tanggal_lahir: 2021-04-15
+  alamat: MyString
+  asal_sekolah: MyString
+  kelas: MyString
+  jurusan: MyString
